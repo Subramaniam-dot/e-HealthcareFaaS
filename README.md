@@ -83,12 +83,13 @@ This guide will help you deploy a FastAPI application, which performs image clas
 
 3. **Apply Kubernetes Configuration**:
    Make sure you have `kubectl` set up and configured to interact with your cluster. Then, apply the configurations:
-   \```bash
+   \```
+   bash
    kubectl apply -f deployment.yaml
    kubectl apply -f service.yaml
    \```
 
-4. **Access the FastAPI Service**:
+5. **Access the FastAPI Service**:
    If you're running on a cloud provider that supports load balancers, the `LoadBalancer` service type will provision an external IP for accessing the service. To get this IP:
    \```bash
    kubectl get svc my-service -n my-namespace
