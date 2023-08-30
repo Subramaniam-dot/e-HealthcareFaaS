@@ -72,16 +72,19 @@ This guide will help you deploy a FastAPI application, which performs image clas
 
 1. **Build the Docker Image**:
    Navigate to the `Script_for_serverless` directory and run:
-   \ ```bash
+   \
+   ```
+   bash
    docker build -t subrome1305/api-lite:latest .
-   \```
+   \
+   ```
 
-2. **Push Docker Image to Registry** (assuming DockerHub):
+3. **Push Docker Image to Registry** (assuming DockerHub):
    \```bash
    docker push subrome1305/api-lite:latest
    \```
 
-3. **Apply Kubernetes Configuration**:
+4. **Apply Kubernetes Configuration**:
    Make sure you have `kubectl` set up and configured to interact with your cluster. Then, apply the configurations:
    \```
    bash
