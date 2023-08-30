@@ -1,7 +1,6 @@
-
 # TB Diagnosis Model and Deployment Directory
 
-This repository contains code for binary classification models for images, specifically using Transfer Learning. 
+This repository contains code for binary classification models for images, specifically using Transfer Learning.
 
 For Dataset Refer: https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels
 
@@ -26,6 +25,7 @@ For Dataset Refer: https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-ma
     ├── requirements.txt
     └── service.yaml
 ```
+
 ## Instructions for Models - Densenet201, VGG19, MobilenetV3-Small:
 
 1. Go to the working directory.
@@ -34,7 +34,7 @@ For Dataset Refer: https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-ma
 4. Run the `densenet201.py` script for training, evaluating, and plotting the model's performance.
 5. The model's weights will be saved in the `modelcheckpoint_weights_Densenet_feature+finetune/` directory.
 
-*Note*: Similar steps apply for `vgg19.py` and `mobilenetv3small.py`.
+_Note_: Similar steps apply for `vgg19.py` and `mobilenetv3small.py`.
 
 ## Model Conversion to TensorFlow Lite:
 
@@ -50,11 +50,9 @@ For Dataset Refer: https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-ma
 2. Run the `main.py` script to start the FastAPI server.
 3. Use the provided endpoint to upload files and get predictions.
 
-
 # Deployment Guide for FastAPI Application with Serverless Backend
 
 This guide will help you deploy a FastAPI application, which performs image classification based on a TensorFlow Lite model. The deployment will be handled in a Kubernetes cluster using the provided deployment configurations.
-
 
 ### Files Explanation:
 
@@ -72,32 +70,35 @@ This guide will help you deploy a FastAPI application, which performs image clas
 
 1. **Build the Docker Image**:
    Navigate to the `Script_for_serverless` directory and run:
-   
-   ```
-   
-   docker build -t subrome1305/api-lite:latest .
-   
+
    ```
 
-3. **Push Docker Image to Registry** (assuming DockerHub):
+   docker build -t subrome1305/api-lite:latest .
+
+   ```
+
+2. **Push Docker Image to Registry** (assuming DockerHub):
+
    ```
    docker push subrome1305/api-lite:latest
    ```
 
-4. **Apply Kubernetes Configuration**:
+3. **Apply Kubernetes Configuration**:
    Make sure you have `kubectl` set up and configured to interact with your cluster. Then, apply the configurations:
+
    ```
-   
+
    kubectl apply -f deployment.yaml
    kubectl apply -f service.yaml
    ```
 
-5. **Access the FastAPI Service**:
+4. **Access the FastAPI Service**:
    If you're running on a cloud provider that supports load balancers, the `LoadBalancer` service type will provision an external IP for accessing the service. To get this IP:
+
    ```
    kubectl get svc my-service -n my-namespace
    ```
-   
+
    Look for the `EXTERNAL-IP` column to get the IP. Once you have it, you can make requests to `http://<EXTERNAL-IP>/predict` to interact with your FastAPI application.
 
 ## Note:
@@ -109,3 +110,5 @@ This guide will help you deploy a FastAPI application, which performs image clas
 ## Contributors:
 
 1. [Subramaniam-dot](https://github.com/Subramaniam-dot)
+
+2. [sasidharan01](https://github.com/sasidharan01)
