@@ -1,4 +1,3 @@
-```
 
 # TB Diagnosis Model and Deployment Directory
 
@@ -99,4 +98,4 @@ This guide will help you deploy a FastAPI application, which performs image clas
 - Ensure that your Kubernetes cluster has enough resources to handle the number of replicas specified in `deployment.yaml`.
 - Update the `class_names` in `main.py` if your TFLite model class labels differ.
 - Ensure you have the TFLite model (`model_quant.tflite`) in the same directory or adjust the path accordingly in `main.py`.
-```
+
