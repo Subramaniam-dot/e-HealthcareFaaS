@@ -106,3 +106,6 @@ This guide will help you deploy a FastAPI application, which performs image clas
 - Update the `class_names` in `main.py` if your TFLite model class labels differ.
 - Ensure you have the TFLite model (`model_quant.tflite`) in the same directory or adjust the path accordingly in `main.py`.
 
+## Contributors:
+
+[Subramaniam-dot](https://github.com/Subramaniam-dot)
