@@ -72,34 +72,36 @@ This guide will help you deploy a FastAPI application, which performs image clas
 
 1. **Build the Docker Image**:
    Navigate to the `Script_for_serverless` directory and run:
-   \
+   
    ```
-   bash
+   
    docker build -t subrome1305/api-lite:latest .
-   \
+   
    ```
 
 3. **Push Docker Image to Registry** (assuming DockerHub):
-   \```bash
+   ```
    docker push subrome1305/api-lite:latest
-   \```
+   ```
 
 4. **Apply Kubernetes Configuration**:
    Make sure you have `kubectl` set up and configured to interact with your cluster. Then, apply the configurations:
-   \```
-   bash
+   ```
+   
    kubectl apply -f deployment.yaml
    kubectl apply -f service.yaml
-   \```
+   ```
 
 5. **Access the FastAPI Service**:
    If you're running on a cloud provider that supports load balancers, the `LoadBalancer` service type will provision an external IP for accessing the service. To get this IP:
-   \```bash
+   ```
    kubectl get svc my-service -n my-namespace
-   \```
+   ```
+   
    Look for the `EXTERNAL-IP` column to get the IP. Once you have it, you can make requests to `http://<EXTERNAL-IP>/predict` to interact with your FastAPI application.
 
 ## Note:
+
 - Ensure that your Kubernetes cluster has enough resources to handle the number of replicas specified in `deployment.yaml`.
 - Update the `class_names` in `main.py` if your TFLite model class labels differ.
 - Ensure you have the TFLite model (`model_quant.tflite`) in the same directory or adjust the path accordingly in `main.py`.
