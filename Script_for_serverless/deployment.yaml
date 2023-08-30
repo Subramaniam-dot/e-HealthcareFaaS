@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+  namespace: my-namespace
+spec:
+  selector:
+    matchLabels:
+      app: my-app
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-app
+        image: subrome1305/api-lite:latest
+        ports:
+        - containerPort: 80
