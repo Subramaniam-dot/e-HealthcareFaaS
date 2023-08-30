@@ -26,7 +26,7 @@ For Dataset Refer: https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-ma
     ├── requirements.txt
     └── service.yaml
 ```
-## Instructions for DenseNet201:
+## Instructions for Models - Densenet201, VGG19, MobilenetV3-Small:
 
 1. Go to the working directory.
 2. The data should be organized into `Dataset/train` for training images and `Dataset/test` for test images.
