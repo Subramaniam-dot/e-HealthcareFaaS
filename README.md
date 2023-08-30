@@ -108,4 +108,4 @@ This guide will help you deploy a FastAPI application, which performs image clas
 
 ## Contributors:
 
-[Subramaniam-dot](https://github.com/Subramaniam-dot)
+1. [Subramaniam-dot](https://github.com/Subramaniam-dot)
