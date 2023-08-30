@@ -7,6 +7,7 @@ For Dataset Refer: https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-ma
 
 ## Directory Structure:
 
+```
 .
 ├── README.md
 ├── model
@@ -24,7 +25,7 @@ For Dataset Refer: https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-ma
     ├── main.py
     ├── requirements.txt
     └── service.yaml
-
+```
 ## Instructions for DenseNet201:
 
 1. Go to the working directory.
