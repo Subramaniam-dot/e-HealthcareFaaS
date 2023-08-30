@@ -72,7 +72,7 @@ This guide will help you deploy a FastAPI application, which performs image clas
 
 1. **Build the Docker Image**:
    Navigate to the `Script_for_serverless` directory and run:
-   \```bash
+   \ ```bash
    docker build -t subrome1305/api-lite:latest .
    \```
 
