@@ -1,5 +1,4 @@
-# TB Diagnosis Model and Deployment Directory
-
+# Neural Networks based Smart e-Health Application for the Prediction of Tuberculosis using Serverless Computing
 This repository contains code for binary classification models for images, specifically using Transfer Learning.
 
 For Dataset Refer: https://www.kaggle.com/datasets/nikhilpandey360/chest-xray-masks-and-labels
