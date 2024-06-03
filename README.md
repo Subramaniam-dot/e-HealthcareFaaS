@@ -1,8 +1,9 @@
 <h1 align="center">e-HealthcareFaaS</h1>
 <div align="center">
-  <a href="https://github.com/your-repo/e-HealthcareFaaS/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/License-BSD%203--Clause-red.svg" alt="License">
+ <a href="https://github.com/your-repo/e-HealthcareFaaS/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-red.svg" alt="License">
   </a>
+
   <a>
     <img src="https://img.shields.io/badge/python-3.7%20%7C%203.8-blue.svg" alt="Python 3.7, 3.8">
   </a>
