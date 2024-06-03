@@ -1,4 +1,21 @@
-# e-HealthcareFaaS
+<h1 align="center">e-HealthcareFaaS</h1>
+<div align="center">
+  <a href="https://github.com/your-repo/e-HealthcareFaaS/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/License-BSD%203--Clause-red.svg" alt="License">
+  </a>
+  <a>
+    <img src="https://img.shields.io/badge/python-3.7%20%7C%203.8-blue.svg" alt="Python 3.7, 3.8">
+  </a>
+  <a>
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fyour-repo%2Fe-HealthcareFaaS&count_bg=%23FFC401&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" alt="Hits">
+  </a>
+  <a href="https://github.com/your-repo/e-HealthcareFaaS/actions">
+    <img src="https://github.com/your-repo/e-HealthcareFaaS/workflows/CI/badge.svg" alt="Actions Status">
+  </a>
+  <a href="https://doi.org/10.1109/JBHI.2024.3367736">
+    <img src="https://img.shields.io/badge/DOI-10.1109%2FJBHI.2024.3367736-green.svg" alt="DOI">
+  </a>
+</div>
 
 > Neural Networks based Smart e-Health Application for the Prediction of Tuberculosis using Serverless Computing
 
